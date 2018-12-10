@@ -1,0 +1,2060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Convert-FromBase64StringWithNoPadding</command:name>
+      <command:verb>Convert</command:verb>
+      <command:noun>FromBase64StringWithNoPadding</command:noun>
+      <maml:description>
+        <maml:para>This is a helper function used to convert from Base 64 encoding strings with no padding.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{Fill in the Description}}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Convert-FromBase64StringWithNoPadding</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>Data</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill Data Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>Data</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill Data Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Export-PFAccessTokenManager</command:name>
+      <command:verb>Export</command:verb>
+      <command:noun>PFAccessTokenManager</command:noun>
+      <maml:description>
+        <maml:para>Export the AccessTokenManager configuration for a given ClientID</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function pulls the AccessTokenManager configuration from the Admin API. The output is sanitized to remove unneeded data and then converted to JSON.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Export-PFAccessTokenManager</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientID</maml:name>
+          <maml:Description>
+            <maml:para>Json string to format</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>SSOServer</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>Credential</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientID</maml:name>
+        <maml:Description>
+          <maml:para>Json string to format</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>SSOServer</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>Credential</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Export-PFAccessTokenManager -ClientID ABTEST2 -SSOServer sodev1 -Credential $PFcred</dev:code>
+        <dev:remarks>
+          <maml:para>{    "id": "ABTest2",    "name": "ABTest2",    "pluginDescriptorRef": {      "id": "com.pingidentity.pf.access.token.management.plugins.JwtBearerAccessTokenManagementPlugin"    },    "parentRef": {      "id": "UPN"    },    "configuration": {      "tables": [        {          "name": "Symmetric Keys",          "inherited": true,          "rows": [</maml:para>
+          <maml:para>         ]        },  ...</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Export-PFAccessTokenManagerMapping</command:name>
+      <command:verb>Export</command:verb>
+      <command:noun>PFAccessTokenManagerMapping</command:noun>
+      <maml:description>
+        <maml:para>Export the AccessTokenManagerMapping configuration for a given ClientID</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function pulls the AccessTokenManagerMapping configuration from the Admin API. The output is sanitized to remove unneeded data and then converted to JSON.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Export-PFAccessTokenManagerMapping</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientID</maml:name>
+          <maml:Description>
+            <maml:para>Json string to format</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>SSOServer</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>Credential</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientID</maml:name>
+        <maml:Description>
+          <maml:para>Json string to format</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>SSOServer</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>Credential</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Export-PFAccessTokenManagerMapping -ClientID ABTEST2 -SSOServer sodev1 -Credential $PFcred</dev:code>
+        <dev:remarks>
+          <maml:para>{    "attributeSources": [      {        "type": "LDAP",        "dataStoreRef": {          "id": "LDAP-9385858585890606049838238444"        },        "id": "VDS",        "description": "VDS",        "baseDn": "ou=users,o=company",        "searchScope": "ONE_LEVEL",      "searchFilter": "(\u0026(objectClass=user)(userPrincipalName=${USER_KEY}))",        "binaryAttributeSettings": {          "objectGUID": {            "binaryEncoding": "BASE64"          },          "objectSid": {            "binaryEncoding": "BASE64"          }        },  ...</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Export-PFConnection</command:name>
+      <command:verb>Export</command:verb>
+      <command:noun>PFConnection</command:noun>
+      <maml:description>
+        <maml:para>This function will generate configuration artifacts from an existing connection.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function will make a series of Admin API calls to generate the AccessTokenManager, AccessTokenManagerMapping, OAuthClient, and OpenIDConnect JSON config files.  The files will be written to the location specified in the Path parameter.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Export-PFConnection</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientID</maml:name>
+          <maml:Description>
+            <maml:para>Json string to format</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>SSOServer</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:Description>
+            <maml:para>This parameter specifies the path where the extracted configurations files will be written.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>Credential</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientID</maml:name>
+        <maml:Description>
+          <maml:para>Json string to format</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>SSOServer</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:Description>
+          <maml:para>This parameter specifies the path where the extracted configurations files will be written.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>Credential</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Export-PFConnection</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Export-PFOAuthClient</command:name>
+      <command:verb>Export</command:verb>
+      <command:noun>PFOAuthClient</command:noun>
+      <maml:description>
+        <maml:para>Export the AccessTokenManagerMapping configuration for a given ClientID</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function pulls the OAuthClient configuration from the Admin API. The output is sanitized to remove unneeded data and then converted to JSON.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Export-PFOAuthClient</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientID</maml:name>
+          <maml:Description>
+            <maml:para>Json string to format</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>SSOServer</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>Credential</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientID</maml:name>
+        <maml:Description>
+          <maml:para>Json string to format</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>SSOServer</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>Credential</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Export-PFOAuthClient -ClientID ABTEST2 -SSOServer sodev1 -Credential $PFcred</dev:code>
+        <dev:remarks>
+          <maml:para>{    "clientId": "ABTest2",    "redirectUris": [      "http://localhost/login",      "http://ucsinfo.int.company.com/",      "http://yahoo.com"    ],    "grantTypes": [      "AUTHORIZATION_CODE",      "ACCESS_TOKEN_VALIDATION"    ],    "name": "ABTest2",    "description": "",    "logoUrl": "",  ...</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Export-PFOpenIDConnectPolicy</command:name>
+      <command:verb>Export</command:verb>
+      <command:noun>PFOpenIDConnectPolicy</command:noun>
+      <maml:description>
+        <maml:para>Export the OpenIDConnectPolicy configuration for a given ClientID</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function pulls the OpenIDConnectPolicy configuration from the Admin API. The output is sanitized to remove unneeded data and then converted to JSON.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Export-PFOpenIDConnectPolicy</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientID</maml:name>
+          <maml:Description>
+            <maml:para>Json string to format</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>SSOServer</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>Credential</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientID</maml:name>
+        <maml:Description>
+          <maml:para>Json string to format</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>SSOServer</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is the hostname of the SSO server you are targeting to pull the config from.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>Credential</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is a PSCredential object containing credentials that have permission to access the PingFed Admin API.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Export-PFOpenIDConnectPolicy -ClientID ABTEST2 -SSOServer ndcssodev1 -Credential $PFcred</dev:code>
+        <dev:remarks>
+          <maml:para>{    "id": "ABTest2",    "name": "ABTest2",    "idTokenLifetime": 5,    "attributeContract": {      "coreAttributes": [        {          "name": "sub"        }      ],      "extendedAttributes": [        {          "name": "name"        },        {          "name": "groups"        },        {          "name": "employeeID"        },  ...</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Format-Json</command:name>
+      <command:verb>Format</command:verb>
+      <command:noun>Json</command:noun>
+      <maml:description>
+        <maml:para>Pass the output from ConvertTo-Json to prettify the output</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The output from ConvertTo-Json is fairly ugly, pass the output to this function to remove all of the un-needed whitespace</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Format-Json</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Json</maml:name>
+          <maml:Description>
+            <maml:para>Json string to format</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Json</maml:name>
+        <maml:Description>
+          <maml:para>Json string to format</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>$Object | ConvertTo-Json -depth 5 | Format-Json</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>$Json = $object | CovertTo-Json</dev:code>
+        <dev:remarks>
+          <maml:para>Format-Json -Json $Json</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-JwtTokenData</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>JwtTokenData</command:noun>
+      <maml:description>
+        <maml:para>Convert a JWT to a PowerShell Object</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Convert a JWT to a PowerShell Object containing attributes for headers and claims</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-JwtTokenData</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>Token</maml:name>
+          <maml:Description>
+            <maml:para>This should be a JWT token</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Recurse</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill Recurse Description}}</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>Token</maml:name>
+        <maml:Description>
+          <maml:para>This should be a JWT token</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Recurse</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill Recurse Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-JWtTokenData -Token $JWT</dev:code>
+        <dev:remarks>
+          <maml:para>headers                                  claims
+-------                                  ------
+@{alg=RS256; kid=IK0hKL7ARv_OTf1kTAKSlz} @{sub=188888; name=Brown, Anthony; groups=System.Object[]; e...</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Invoke-DecodeJWT</command:name>
+      <command:verb>Invoke</command:verb>
+      <command:noun>DecodeJWT</command:noun>
+      <maml:description>
+        <maml:para>This is a helper function to convert data in a JWT token to a readable format.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{Fill in the Description}}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Invoke-DecodeJWT</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>RawToken</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill RawToken Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>RawToken</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill RawToken Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-ClientSecret</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>ClientSecret</command:noun>
+      <maml:description>
+        <maml:para>Generate a randam 64 character string only using Alpha-Numeric characters</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Generate a randam 64 character string only using Alpha-Numeric characters suitable to be used as a clientSecret.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-ClientSecret</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-ClientSecret</dev:code>
+        <dev:remarks>
+          <maml:para>N6pbPyr12kS3qjHZsEwGQidCefuhv5zJVxF0WTm4D8tYKoInAlMgBX7ULa9cRO</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-OIDCHTMLForm</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>OIDCHTMLForm</command:noun>
+      <maml:description>
+        <maml:para>This function is used to create a simple html document that contains a test form for a connection.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function was built to specifically work with PingFederate v7.x+ as well as with another internal module maintianed by the client.</maml:para>
+      <maml:para>This form will generate a test html document based on the values passed that can be used to test an OIDC connection.  This form is saved as one of the artifacts for a new connection in the pfconnections Git Repo.</maml:para>
+      <maml:para>Pass in a ClientId, SSOURL, GrantType, RedirectURI, and a folder path and a new html document will be created in that path.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-OIDCHTMLForm</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:Description>
+            <maml:para>This should be a valid OIDC connection name from the PingFederate environment specified in the SSOURL value.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>SSOUrl</maml:name>
+          <maml:Description>
+            <maml:para>This will either be 'sso.company.com' for the PROD enviornment or 'ssodev.company.com' for the DEV enviornment.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>GrantType</maml:name>
+          <maml:Description>
+            <maml:para>This will either be 'IMPLICIT' or 'AUTHORIZATION_CODE' depending on what granttype the connection is configured to use.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>RedirectURI</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is used to tell the OIDC connection where to redirect the web broswer to after completing authentication. The value used here needs to be configured in the redirect URI whitelist for the connection in PingFederate.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+          <maml:name>ConnectionPath</maml:name>
+          <maml:Description>
+            <maml:para>This is the base folder path for where the file will be created.  &lt;connectionPath&gt;\&lt;ClientId&gt; &lt;ssoURL (first part)&gt; &lt;GrantType&gt;.html</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:Description>
+          <maml:para>This should be a valid OIDC connection name from the PingFederate environment specified in the SSOURL value.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>SSOUrl</maml:name>
+        <maml:Description>
+          <maml:para>This will either be 'sso.company.com' for the PROD enviornment or 'ssodev.company.com' for the DEV enviornment.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>GrantType</maml:name>
+        <maml:Description>
+          <maml:para>This will either be 'IMPLICIT' or 'AUTHORIZATION_CODE' depending on what granttype the connection is configured to use.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>RedirectURI</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is used to tell the OIDC connection where to redirect the web broswer to after completing authentication. The value used here needs to be configured in the redirect URI whitelist for the connection in PingFederate.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+        <maml:name>ConnectionPath</maml:name>
+        <maml:Description>
+          <maml:para>This is the base folder path for where the file will be created.  &lt;connectionPath&gt;\&lt;ClientId&gt; &lt;ssoURL (first part)&gt; &lt;GrantType&gt;.html</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-OIDCHTMLForm -ClientId $ClientId -SSOUrl $SSOURL -GrantType $GrantType -RedirectURI 'http://ucsinfo.int.company.com/' -ConnectionPath $PFConnectionPath</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-PFAccessTokenMangerJson</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>PFAccessTokenMangerJson</command:noun>
+      <maml:description>
+        <maml:para>This function will generate a json string containing the configuration for a PingFederate Access Token Manager object.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function was built to specifically work with PingFederate v7.x+ as well as with another internal module maintianed by the client.</maml:para>
+      <maml:para>This function will generate a json string containing the configuration for a PingFederate Access Token Manager object.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-PFAccessTokenMangerJson</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is used to set the clientId in the JSON config</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is used to set the clientId in the JSON config</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-pfAccessTokenMangerJson -clientId TestThis</dev:code>
+        <dev:remarks>
+          <maml:para>{     "id": "TestThis",     "name": "TestThis",     "pluginDescriptorRef": {     "id": "com.pingidentity.pf.access.token.management.plugins.JwtBearerAccessTokenManagementPlugin"     },     "parentRef": {     "id": "UPN"     },     "configuration": {     "tables": [         {         "name": "Symmetric Keys",         "inherited": true,         "rows": [</maml:para>
+          <maml:para>        ]         },         {         "name": "Certificates",         "inherited": true         }     ], ...</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-PFClientJson</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>PFClientJson</command:noun>
+      <maml:description>
+        <maml:para>This function will generate a json string containing the configuration for a PingFederate Oauth Client object.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function was built to specifically work with PingFederate v7.x+ as well as with another internal module maintianed by the client.</maml:para>
+      <maml:para>This function will generate a json string containing the configuration for a PingFederate Oauth Client object. The function sets the RedirectUris to two entries automatically ('http://localhost/login' and 'http://ucsinfo.int.company.com/'), any additional values passed in the RedirectURIs parameter will be appended to the default entries.</maml:para>
+      <maml:para>If the GrantType is set to 'AUTHORIZATION_CODE' then a ClientSecret will be generated for you.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-PFClientJson</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is used to set the ClientId in the JSON config</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>GrantType</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is used to set the GrantType.  This value should either be 'IMPLICIT' or 'AUTHORIZATION_CODE'. If the GrantType is set to 'AUTHORIZATION_CODE' then a ClientSecret will be generated for you.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>ClientSecret</maml:name>
+          <maml:Description>
+            <maml:para>If you already have an existing client_secret you can optionally pass it in here and it will be used.  If you leave this blank and the GrantType is 'AUTHORIZATION_CODE' then a new client_secret will be generated for you.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>RedirectURIs</maml:name>
+          <maml:Description>
+            <maml:para>This is a string array that should contain a list of RedirectURIs that will be whitelisted in the configuration for  the OIDC client configuration. 'http://localhost/login' and 'http://ucsinfo.int.company.com/' are configured by default and anything passed in this parameter will be appended to the list.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Array</command:parameterValue>
+          <dev:type>
+            <maml:name>Array</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is used to set the ClientId in the JSON config</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>GrantType</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is used to set the GrantType.  This value should either be 'IMPLICIT' or 'AUTHORIZATION_CODE'. If the GrantType is set to 'AUTHORIZATION_CODE' then a ClientSecret will be generated for you.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>ClientSecret</maml:name>
+        <maml:Description>
+          <maml:para>If you already have an existing client_secret you can optionally pass it in here and it will be used.  If you leave this blank and the GrantType is 'AUTHORIZATION_CODE' then a new client_secret will be generated for you.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>RedirectURIs</maml:name>
+        <maml:Description>
+          <maml:para>This is a string array that should contain a list of RedirectURIs that will be whitelisted in the configuration for  the OIDC client configuration. 'http://localhost/login' and 'http://ucsinfo.int.company.com/' are configured by default and anything passed in this parameter will be appended to the list.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Array</command:parameterValue>
+        <dev:type>
+          <maml:name>Array</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-pfClientJson -ClientId TestThis -GrantType IMPLICIT -RedirectURIs 'http://localhost:8080'</dev:code>
+        <dev:remarks>
+          <maml:para>{    "clientId": "TestThis",    "redirectUris": [      "http://localhost/login",      "http://ucsinfo.int.company.com/",      "http://localhost:8080"    ],    "grantTypes": [      "IMPLICIT",      "ACCESS_TOKEN_VALIDATION"    ],  ...</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-PFOIDConnectionWrapper</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>PFOIDConnectionWrapper</command:noun>
+      <maml:description>
+        <maml:para>This function wraps the New-PFOIDCConnection function and adds end to end automation of the connection creation process.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function was built to specifically work with PingFederate v7.x+ as well as with another internal module maintianed by the client.</maml:para>
+      <maml:para>This function wraps the New-PFOIDCConnection function and adds end to end automation of the connection creation process.</maml:para>
+      <maml:para>This function handles the following tasks: - Creates a feature branch in the local Git repo for pfConnections based on the develop branch</maml:para>
+      <maml:para>- Creates a new OIDC Connection folder in the pfConnections root based on clientId name</maml:para>
+      <maml:para>- Generates &lt;ClientId&gt; - AccessTokenManager.json file</maml:para>
+      <maml:para>- Generates &lt;ClientId&gt; - Client.json file</maml:para>
+      <maml:para>- Generates &lt;ClientId&gt; - OIDC Policy.json file</maml:para>
+      <maml:para>- Creates new OIDC connection in PingFed, via a call to New-PFOIDCConnection</maml:para>
+      <maml:para>- Tests the connection and validates the token</maml:para>
+      <maml:para>- Generates a &lt;ClientId&gt; &lt;ssoenv&gt; &lt;GrantType&gt;.html test form file - If the GrantType was auth_code then the new clientSecret will be added to PIM</maml:para>
+      <maml:para>- Generates the body of the notification email</maml:para>
+      <maml:para>- Adds the four new files to the feature-&lt;ClientId&gt; branch</maml:para>
+      <maml:para>- Performs a Git commit -m and puts in a standard comment</maml:para>
+      <maml:para>- Merges the feature branch into the develop branch using the --no-ff switch</maml:para>
+      <maml:para>- Returns an object with ClientId, ClientSecret, PIMStatus, ValidatedToken, and Email body</maml:para>
+      <maml:para></maml:para>
+      <maml:para>The Git interactions can be turned off by using the AddToGit = $false parameter.  If you use the AddToGit feature you will need to have the posh-Git module installed.  The script stops short of performing a git push and leaves that step up to you to ensure you are comfortable pushing the new changes back to the origin.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-PFOIDConnectionWrapper</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientID</maml:name>
+          <maml:Description>
+            <maml:para>This parameter represents the name of the application that the OIDC connection is being created for.  No spaces are allowed.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="10" aliases="none">
+          <maml:name>PFPath</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is the folder path to the pfconnections folder.  You can put this folder anywhere when you clone the pfConnections repo.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>C:\PS Script\dsa\pfconnections\Connections\</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="11" aliases="none">
+          <maml:name>RedirectURIs</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is a string array used for specifiying additional Redirect URIs to add to the connection at create time.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Array</command:parameterValue>
+          <dev:type>
+            <maml:name>Array</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="12" aliases="none">
+          <maml:name>Credential</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is a PSCredential object set with a username and password of a user that is granted admin permissions in the PingFed console. The username should not include any domain information.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>GrantType</maml:name>
+          <maml:Description>
+            <maml:para>This parameter sets the Grant Type for the OIDC connection.  This value should be either 'IMPLICIT' or 'AUTHORIZATION_CODE'.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>SSOServer</maml:name>
+          <maml:Description>
+            <maml:para>This parameter tells the script which PingFed server to connect to for Admin API calls.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>RestrictIPInternal</maml:name>
+          <maml:Description>
+            <maml:para>This parameter toggles whether a conditionalCriteria statement limiting a connection to use only internal IPs is added to the JSON config.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+          <maml:name>RestrictToGroup</maml:name>
+          <maml:Description>
+            <maml:para>This parameter toggles whether a conditionalCriteria statement limiting a connection to only members of a certain group.  If you use this option you will need to also use the Restrictedgroup option to set which group access should be restricted to.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
+          <maml:name>RestrictedGroup</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill RestrictedGroup Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
+          <maml:name>ClientSecret</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is used to specifiy an existing client_secrect to use when creating the connection.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
+          <maml:name>AddToGit</maml:name>
+          <maml:Description>
+            <maml:para>This parameter toggles functionality to control adding the new connection to the local Git Repo as a new feature branch. If you use the AddToGit  feature you will need to have the posh-Git module installed.  The script stops short of performing a git push and leaves that step up to you to ensure you are comfortable pushing the new changes back to the origin.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>True</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
+          <maml:name>AddToPim</maml:name>
+          <maml:Description>
+            <maml:para>This paramater contols if you want new Auth_code connections to register the client_secret in PIM automatically.  If you have already assigned a client_secret and stored it in PIM then you would use this option.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>True</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientID</maml:name>
+        <maml:Description>
+          <maml:para>This parameter represents the name of the application that the OIDC connection is being created for.  No spaces are allowed.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>GrantType</maml:name>
+        <maml:Description>
+          <maml:para>This parameter sets the Grant Type for the OIDC connection.  This value should be either 'IMPLICIT' or 'AUTHORIZATION_CODE'.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>SSOServer</maml:name>
+        <maml:Description>
+          <maml:para>This parameter tells the script which PingFed server to connect to for Admin API calls.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>RestrictIPInternal</maml:name>
+        <maml:Description>
+          <maml:para>This parameter toggles whether a conditionalCriteria statement limiting a connection to use only internal IPs is added to the JSON config.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+        <maml:name>RestrictToGroup</maml:name>
+        <maml:Description>
+          <maml:para>This parameter toggles whether a conditionalCriteria statement limiting a connection to only members of a certain group.  If you use this option you will need to also use the Restrictedgroup option to set which group access should be restricted to.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
+        <maml:name>RestrictedGroup</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill RestrictedGroup Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
+        <maml:name>ClientSecret</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is used to specifiy an existing client_secrect to use when creating the connection.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
+        <maml:name>AddToGit</maml:name>
+        <maml:Description>
+          <maml:para>This parameter toggles functionality to control adding the new connection to the local Git Repo as a new feature branch. If you use the AddToGit  feature you will need to have the posh-Git module installed.  The script stops short of performing a git push and leaves that step up to you to ensure you are comfortable pushing the new changes back to the origin.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>True</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
+        <maml:name>AddToPim</maml:name>
+        <maml:Description>
+          <maml:para>This paramater contols if you want new Auth_code connections to register the client_secret in PIM automatically.  If you have already assigned a client_secret and stored it in PIM then you would use this option.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>True</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="10" aliases="none">
+        <maml:name>PFPath</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is the folder path to the pfconnections folder.  You can put this folder anywhere when you clone the pfConnections repo.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>C:\PS Script\dsa\pfconnections\Connections\</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="11" aliases="none">
+        <maml:name>RedirectURIs</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is a string array used for specifiying additional Redirect URIs to add to the connection at create time.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Array</command:parameterValue>
+        <dev:type>
+          <maml:name>Array</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="12" aliases="none">
+        <maml:name>Credential</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is a PSCredential object set with a username and password of a user that is granted admin permissions in the PingFed console. The username should not include any domain information.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>$props = @{</dev:code>
+        <dev:remarks>
+          <maml:para>'ClientID'             = "VisaPriorityPassDev"         'GrantType'            = "IMPLICIT" #AUTHORIZATION_CODE or IMPLICIT         'SSOServer'            = "ndcssodev1"         'RestrictIPInternal'   = $false         'RestrictToGroup'      = $false         'RestrictedGroup'      = ""         'AddToGit'             = $true         'PFPath'               = 'C:\PS Script\dsa\pfconnections\Connections\'         'Credential'           = $pfcred         'RedirectURIs'         = @() }</maml:para>
+          <maml:para>$NewConnection = New-PFOIDConnectionWrapper @props</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-PFOIDCPolicyJson</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>PFOIDCPolicyJson</command:noun>
+      <maml:description>
+        <maml:para>This function will generate a json string containing the configuration for a PingFederate OIDC Policy object.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function was built to specifically work with PingFederate v7.x+ as well as with another internal module maintianed by the client.</maml:para>
+      <maml:para>This function will generate a json string containing the configuration for a PingFederate OIDC Policy object. This function also contains built-in functionality for setting the two most commonly used conditionalCriteria  for connections.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-PFOIDCPolicyJson</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:Description>
+            <maml:para>This parameter is used to set the ClientId in the JSON config</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>RestrictIPInternal</maml:name>
+          <maml:Description>
+            <maml:para>This parameter toggles whether a conditionalCriteria statement limiting a connection to use only internal IPs is added to the JSON config.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>RestrictToGroup</maml:name>
+          <maml:Description>
+            <maml:para>This parameter toggles whether a conditionalCriteria statement limiting a connection to only members of a certain group.  If you use this option you will need to also use the Restrictedgroup option to set which group access should be restricted to.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>RestrictedGroup</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill RestrictedGroup Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:Description>
+          <maml:para>This parameter is used to set the ClientId in the JSON config</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>RestrictIPInternal</maml:name>
+        <maml:Description>
+          <maml:para>This parameter toggles whether a conditionalCriteria statement limiting a connection to use only internal IPs is added to the JSON config.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>RestrictToGroup</maml:name>
+        <maml:Description>
+          <maml:para>This parameter toggles whether a conditionalCriteria statement limiting a connection to only members of a certain group.  If you use this option you will need to also use the Restrictedgroup option to set which group access should be restricted to.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>RestrictedGroup</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill RestrictedGroup Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-pfOIDCPolicyJson -ClientId TestThis</dev:code>
+        <dev:remarks>
+          <maml:para>{    "id": "TestThis",    "name": "TestThis",    "accessTokenManagerRef": {      "id": "TestThis"    },    "includeSriInIdToken": true,    "includeUserInfoInIdToken": true,    "attributeContract": {      "coreAttributes": [        {          "name": "sub"        }      ],      "extendedAttributes": [        {          "name": "userPrincipalName"        },  ...</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>New-pfOIDCPolicyJson -ClientId TestThis -RestrictIPInternal $true -RestrictToGroup $true -RestrictedGroup "SSO Admins"</dev:code>
+        <dev:remarks>
+          <maml:para>...     "issuanceCriteria": {        "conditionalCriteria": [</maml:para>
+          <maml:para>       ],        "expressionCriteria": [          {            "errorResult": "Access to this application is restricted to the Company network. Please access this application from the Company network or VPN.",            "expression": "#isClientIPInternal = @com.pingidentity.sdk.CIDROperations@isInRange(#this.get(\"context.ClientIp\"),\"10.0.0.0/8\") || @com.pingidentity.sdk.CIDROperations@isInRange(#this.get(\"context.ClientIp\"),\"172.16.0                  .0/12\") || @com.pingidentity.sdk.CIDROperations@isInRange(#this.get(\"context.ClientIp\"),\"192.168.0.0/16\") || @com.pingidentity.sdk.CIDROperations@isInRange(#this.get(\"context.ClientIp\"),\"100.64.0.0/10\"), #isClientIPInternal"          },          {            "errorResult": "Access to this application is retricted to members of the SSO Admins AD group.",          "expression": "#groupString = "($RestrictedGroup|SSO Admins)", #authorized = false, #this.get("ds.VDS.memberOf") == null ? null : ( #groups = #this.get("ds.VDS.memberOf").getValues(), #groups.{ #group = #this, #group = new javax.naming.ldap.LdapName(#group), #cn = #group.getRdn(#group.size() - 1).getValue().toString(), #authorized = #authorized or (#cn.matches("(?i). "+#groupString+". ")) } ), #authorized"          }        ]</maml:para>
+          <maml:para>...</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-PIMPassword</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>PIMPassword</command:noun>
+      <maml:description>
+        <maml:para>This function makes an API call to the PIM server to register a new clientSecret for a connection.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function makes an API call to the PIM server to register a new clientSecret for a connection.</maml:para>
+      <maml:para>To use this function you must pass a credential that has the required permissions to create new password entries for the specified shared credentials password list.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-PIMPassword</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ClientID</maml:name>
+          <maml:Description>
+            <maml:para>The clientId will map to the AccountName in PIM</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>ClientSecret</maml:name>
+          <maml:Description>
+            <maml:para>The ClientSecret will map to the Password in PIM</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>SystemName</maml:name>
+          <maml:Description>
+            <maml:para>The SystemName will map to the SystemName in PIM, for PF connections this should be 'ssodev.&lt;company&gt;.com' or 'sso.&lt;company&gt;.com'.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>PasswordList</maml:name>
+          <maml:Description>
+            <maml:para>This will determine which shared credential list this entry will be added to, for PF connections this should be 'SSO-Connections'.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>SSO-Connections</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+          <maml:name>Credential</maml:name>
+          <maml:Description>
+            <maml:para>This will be a PSCredential object for an AD account that has create permissions to the specifed shared credentials list.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ClientID</maml:name>
+        <maml:Description>
+          <maml:para>The clientId will map to the AccountName in PIM</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>ClientSecret</maml:name>
+        <maml:Description>
+          <maml:para>The ClientSecret will map to the Password in PIM</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>SystemName</maml:name>
+        <maml:Description>
+          <maml:para>The SystemName will map to the SystemName in PIM, for PF connections this should be 'ssodev.&lt;company&gt;.com' or 'sso.&lt;company&gt;.com'.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>PasswordList</maml:name>
+        <maml:Description>
+          <maml:para>This will determine which shared credential list this entry will be added to, for PF connections this should be 'SSO-Connections'.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>SSO-Connections</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+        <maml:name>Credential</maml:name>
+        <maml:Description>
+          <maml:para>This will be a PSCredential object for an AD account that has create permissions to the specifed shared credentials list.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>new-PIMPassword -ClientID 'TestThis' -ClientSecret 'ThisIsTheTestPassword' -PasswordList 'SSO-Connections' -Credential $pfCred</dev:code>
+        <dev:remarks>
+          <maml:para>Success</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Test-OIDCConnection</command:name>
+      <command:verb>Test</command:verb>
+      <command:noun>OIDCConnection</command:noun>
+      <maml:description>
+        <maml:para>{{Fill in the Synopsis}}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{Fill in the Description}}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Test-OIDCConnection</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill ClientId Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>SSOUrl</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill SSOUrl Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>GrantType</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill GrantType Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>ClientSecret</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill ClientSecret Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>RedirectURI</maml:name>
+          <maml:Description>
+            <maml:para>{{Fill RedirectURI Description}}</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill ClientId Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>ClientSecret</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill ClientSecret Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>GrantType</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill GrantType Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>RedirectURI</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill RedirectURI Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>SSOUrl</maml:name>
+        <maml:Description>
+          <maml:para>{{Fill SSOUrl Description}}</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+</helpItems>
